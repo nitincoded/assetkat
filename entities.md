@@ -16,7 +16,11 @@ description | string 80
 
 Related To | Type | Comment
 ---------- | ---- | -------
+Asset | *-1 | Parent Asset
 Class | *-1 | 
+Location | *-1 | Parent Location
+Position | *-1 | Parent Position
+Type | *-1 | 
 
 ### Fields
 
@@ -72,6 +76,11 @@ Field | Spec
 is_enabled | bool
 
 
+## Location
+
+Same as Asset
+
+
 ## Organization
 
 ### Relationships
@@ -83,6 +92,11 @@ Related To | Type | Comment
 
 Field | Spec
 ----- | ----
+
+
+## Position
+
+Same as Asset
 
 
 ## Role
@@ -110,6 +124,21 @@ Related To | Type | Comment
 Field | Spec
 ----- | ----
 syscode | string 8
+type | {asset, ...}
+
+
+## Type
+
+### Relationships
+
+Related To | Type | Comment
+---------- | ---- | -------
+Asset | 1-* | Parent class
+
+### Fields
+
+Field | Spec
+----- | ----
 type | {asset, ...}
 
 
