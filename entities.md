@@ -78,7 +78,7 @@ is_enabled | bool
 
 ## Location
 
-Same as Asset
+Same as Asset, except no fields
 
 
 ## Organization
@@ -96,7 +96,7 @@ Field | Spec
 
 ## Position
 
-Same as Asset
+Same as Asset, except no fields
 
 
 ## Role
